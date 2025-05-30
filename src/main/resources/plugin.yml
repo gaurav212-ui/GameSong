@@ -1,5 +1,5 @@
 name: GameSong
-main: com.songs
+main: com.songs.GamingSong
 api-version: 1.12
 author: DexstDev
 version: 1.0-beta
