@@ -1,0 +1,7 @@
+name: GameSong
+main: com.songs
+api-version: 1.12
+author: DexstDev
+version: 1.0-beta
+description: Music playback plugin inside minecraft, determines special areas and music playback events.
+website: spigotmc.org
