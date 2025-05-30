@@ -33,11 +33,7 @@
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
-        <!-- World guard API -->
-        <repository>
-            <id>sk89q-repo</id>
-            <url>https://maven.enginehub.org/repo/</url>
-        </repository>
+
     </repositories>
     <dependencyManagement>
         <dependencies>
@@ -52,6 +48,24 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- Plotsquared Core-->
+        <dependency>
+            <groupId>com.intellectualsites.plotsquared</groupId>
+            <artifactId>plotsquared-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Plotsquaed API -->
+        <dependency>
+            <groupId>com.intellectualsites.plotsquared</groupId>
+            <artifactId>plotsquared-bukkit</artifactId>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>plotsquared-core</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <!-- EngineHub API -->
         <dependency>
             <groupId>com.fastasyncworldedit</groupId>
@@ -70,13 +84,6 @@
             <groupId>se.michaelthelin.spotify</groupId>
             <artifactId>spotify-web-api-java</artifactId>
             <version>9.2.0</version>
-        </dependency>
-        <!-- World Guard Core -->
-        <dependency>
-            <groupId>com.sk89q.worldguard</groupId>
-            <artifactId>worldguard-bukkit</artifactId>
-            <version>VERSION</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
