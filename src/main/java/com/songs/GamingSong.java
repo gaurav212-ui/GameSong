@@ -5,6 +5,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class GamingSong extends JavaPlugin {
+
+    public static String prefix = "&8[&aGamingSong&8] &7";
+    private String version = getDescription().getVersion();
     
     // Activation code of the plugin
     @Override
@@ -13,7 +16,10 @@ public class GamingSong extends JavaPlugin {
             ChatColor.translateAlternateColorCodes('&', "&a==================================")
         );
         Bukkit.getConsoleSender().sendMessage(
-            ChatColor.translateAlternateColorCodes('&', "&aGamingSong plugin has been enabled!")
+            ChatColor.translateAlternateColorCodes('&', prefix+" &3&lplugin has been enabled!"+version)
+        );
+        Bukkit.getConsoleSender().sendMessage(
+            ChatColor.translateAlternateColorCodes('&', ("&7Author: &eDexstDev"))
         );
         Bukkit.getConsoleSender().sendMessage(
             ChatColor.translateAlternateColorCodes('&', ("==================================="))
@@ -29,7 +35,7 @@ public class GamingSong extends JavaPlugin {
             )
         );
         Bukkit.getConsoleSender().sendMessage(
-            ChatColor.translateAlternateColorCodes('&', ("&cGamingSong plugin has disabled!")
+            ChatColor.translateAlternateColorCodes('&', (prefix+" &e&lplugin has disabled!"+version)
             )
         );
         Bukkit.getConsoleSender().sendMessage(
