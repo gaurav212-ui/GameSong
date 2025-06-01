@@ -5,3 +5,5 @@ author: DexstDev
 version: 1.0-beta
 description: Music playback plugin inside minecraft, determines special areas and music playback events.
 website: spigotmc.org
+depend: [plotsquared, FastAsnycWorldEdit]
+dependencies: [FastAsnycWorldEdit]
